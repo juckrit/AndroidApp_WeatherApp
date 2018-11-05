@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <TextView
+        android:id="@+id/myTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Enter City Name"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/myCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myTv"
+        android:layout_centerHorizontal="true"
+        android:hint="ex. bangkok"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:layout_below="@+id/myCityName"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvtemp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvpressure"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pressure"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvhumidity"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Humidity"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvwindspeed"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wind Speed"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvwinddeg"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wind Degree"
+
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</android.widget.RelativeLayout>
